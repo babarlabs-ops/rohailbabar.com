@@ -265,30 +265,6 @@
     display: block;
   }
 
-  /* REAL ESTATE */
-  .re-intro { font-size: 14px; color: var(--text-mid); line-height: 1.85; margin-bottom: 1.25rem; }
-
-  .re-pills { display: flex; flex-wrap: wrap; gap: 10px; }
-
-  .re-pill {
-    display: flex;
-    flex-direction: column;
-    background: var(--bg-card);
-    border: 1px solid var(--rule-mid);
-    border-radius: 3px;
-    padding: 10px 18px;
-  }
-
-  .re-pill-val {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 22px;
-    font-weight: 600;
-    color: var(--text);
-    line-height: 1.1;
-  }
-
-  .re-pill-label { font-size: 11px; color: var(--text-dim); letter-spacing: 0.5px; margin-top: 2px; text-transform: uppercase; }
-
   /* BJJ */
   .bjj-belt-row { display: flex; align-items: center; gap: 18px; margin-bottom: 1.5rem; flex-wrap: wrap; }
 
@@ -397,6 +373,7 @@
 
   .foot a { color: var(--text-dim); text-decoration: none; }
   .foot a:hover { color: var(--text-mid); }
+  .foot-links { display: inline-flex; gap: 12px; flex-wrap: wrap; }
 
   /* ANIMATION */
   @keyframes fadeUp {
@@ -425,7 +402,7 @@
 
   <!-- HERO -->
   <header class="hero">
-    <p class="hero-eyebrow">AI Builder &nbsp;·&nbsp; Cybersecurity &nbsp;·&nbsp; Real Estate &nbsp;·&nbsp; Brazilian Jiu-Jitsu</p>
+    <p class="hero-eyebrow">AI Builder &nbsp;·&nbsp; Cybersecurity &nbsp;·&nbsp; Brazilian Jiu-Jitsu</p>
     <h1 class="hero-name">Rohail Babar</h1>
     <p class="hero-bio">
       Agentic AI builder. Cybersecurity strategist at BCG.
@@ -540,30 +517,6 @@
 
   </section>
 
-  <!-- REAL ESTATE -->
-  <section class="section">
-    <p class="section-label">Real Estate</p>
-    <p class="re-intro">Private investor since 2015. Residential and commercial — long-horizon, equity-focused.</p>
-    <div class="re-pills">
-      <div class="re-pill">
-        <span class="re-pill-val">Class A</span>
-        <span class="re-pill-label">Appreciation-Focused</span>
-      </div>
-      <div class="re-pill">
-        <span class="re-pill-val">Multi-state</span>
-        <span class="re-pill-label">Portfolio</span>
-      </div>
-      <div class="re-pill">
-        <span class="re-pill-val">5%+</span>
-        <span class="re-pill-label">Cap Rates</span>
-      </div>
-      <div class="re-pill">
-        <span class="re-pill-val">10+</span>
-        <span class="re-pill-label">Years Active</span>
-      </div>
-    </div>
-  </section>
-
   <!-- BJJ -->
   <section class="section">
     <p class="section-label">Brazilian Jiu-Jitsu</p>
@@ -651,6 +604,7 @@
 
 <footer class="foot">
   <span>rohailbabar.com</span>
+  <span class="foot-links"><a href="/privacy.html">Privacy Policy</a><a href="/terms.html">Terms &amp; Conditions</a></span>
   <span><a href="mailto:rohail.babar@gmail.com">rohail.babar@gmail.com</a> &nbsp;·&nbsp; Atlanta, GA</span>
 </footer>
 
