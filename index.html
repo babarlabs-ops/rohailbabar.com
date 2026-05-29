@@ -367,18 +367,16 @@
   .bjj-stop-note  { font-size: 13px; color: var(--text-mid); }
 
   /* CREDENTIALS */
-  .cred-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-
-  .cred-item {
+  .cred-card {
     background: var(--bg-card);
     border: 1px solid var(--rule-mid);
     border-radius: 4px;
     padding: 0.85rem 1rem;
   }
 
-  .cred-item strong { display: block; font-size: 14px; font-weight: 500; color: var(--text); margin-bottom: 2px; }
-  .cred-item span { font-size: 12px; color: var(--text-mid); }
-  .cred-item-right { grid-column: 2; }
+  .cred-card strong { display: block; font-size: 14px; font-weight: 500; color: var(--text); margin-bottom: 8px; }
+  .cred-list { display: grid; gap: 5px; }
+  .cred-list span { font-size: 12px; color: var(--text-mid); }
 
   /* FOOTER */
   .foot {
@@ -418,8 +416,6 @@
     .page { padding: 3rem 1.25rem 5rem; }
     .build-cols { grid-template-columns: 1fr; }
     .build-featured { grid-column: auto; }
-    .cred-cols { grid-template-columns: 1fr; }
-    .cred-item-right { grid-column: auto; }
     .career-header { flex-direction: column; gap: 2px; }
   }
 </style>
@@ -641,18 +637,12 @@
   <!-- CREDENTIALS -->
   <section class="section">
     <p class="section-label">Education &amp; Credentials</p>
-    <div class="cred-cols">
-      <div class="cred-item">
-        <strong>B.A., Communication Studies</strong>
+    <div class="cred-card">
+      <strong>B.A., Communication Studies</strong>
+      <div class="cred-list">
         <span>Arizona State University</span>
-      </div>
-      <div class="cred-item">
-        <strong>CIPT</strong>
-        <span>Certified Information Privacy Technologist — IAPP</span>
-      </div>
-      <div class="cred-item cred-item-right">
-        <strong>CISM</strong>
-        <span>Certified Information Security Manager — ISACA</span>
+        <span>CIPT — Certified Information Privacy Technologist, IAPP</span>
+        <span>CISM — Certified Information Security Manager, ISACA</span>
       </div>
     </div>
   </section>
